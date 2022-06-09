@@ -1,2 +1,2 @@
-# Knowledge-graph-ETM
-An end-to-end knowledge-graph-embedded topic model
+# GAT-ETM
+An end-to-end graph-based embedded topic model
