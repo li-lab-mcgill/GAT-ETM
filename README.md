@@ -1,2 +1,2 @@
 # GAT-ETM
-An end-to-end graph-based embedded topic model
+GAT-ETM An end-to-end graph-based embedded topic model that jointly learning a knowledge graph of medical codes (in our model, ICD and ATC; but it is replaceable) and patients EHRs. Our model is able to learn multimodal (disease ICD and drug ATC) topics based on co-occurence patterns from EHR and semantic similarity from knowledge graph. Our idea is to leverage existing knowledge to aid EHR modeling especially for rare medical codes. 
