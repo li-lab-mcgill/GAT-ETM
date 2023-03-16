@@ -17,9 +17,21 @@
 
 **Pre-trained code embeddings**
 
-## Training
+- Metadata file (.txt) format is as follows:
+  ```shell
+    code1 code2 ...
+    num_code1 num_code2 ...
+    train_init_emb_flag
+    init_emb_path
+  ```
+  where for the first two rows, each column describes `type name` and `token vocabulary size` of one type of codes, and the followed two rows are `fix initilized embedding or not (1 or 0)` and `directory path of initialized embeddings file`. We provide a sample metadata file. 
+
+## Training model
+        python3 main_getm.py --data_path data/your_data --save_path results/your_result --meta_file metadata_icd61210_atc82020_fine --mode train --gpu_device 0 --num_topics 100 --tq --epoch EPOCH --lr 0.01 
+**Notice:** the `metafile` should be put in `data_path` directory
 
 ## Loading Trained Model and Evalutating
+        python3 main_getm.py --data_path data/your_data --save_path results/your_result --meta_file metadata_icd61210_atc82020_fine --mode eval -load_from results/your_trained_mdl --gpu_device 0 --num_topics 100 --tq --epoch EPOCH --lr 0.01  
 
 ## Citation: 
 Please cite the following paper if you use this source in your work.
