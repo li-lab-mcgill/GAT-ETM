@@ -2,9 +2,15 @@
 **Graph ATtention-Embedded Topic Model (GAT-ETM)** is an end-to-end graph-based embedded topic model that jointly learns a knowledge graph of medical codes (ICD disease and ATC drug codes) and patients EHRs. Our model is able to learn multimodal (disease and drug) topics based on co-occurence patterns from EHR and semantic similarity from knowledge graph. Our idea is to leverage existing knowledge to aid EHR modeling especially for rare medical codes. Notice that this framework is general and the ICD-ATC knowledge graph can be replaced by other knowledge graphs of the medical codes utilized in EHR data. This repo is the code used in a journal paper "**Modeling electronic health record data using an end-to-end knowledge-graph-informed topic model**". Please refer to the paper  (https://www.nature.com/articles/s41598-022-22956-w) for details. 
 <h2 align="center">
   Overview of GAT-ETM
-a. probabilistic graphic model. b. knowledge graph construction and augmentation. c. DNN model. 
-  <img align="center"  src="./overview.png" width="900" alt="...">
 </h2>
+<p align="center" style="text-align: center;">
+  <img src="./overview.png" width="900" alt="overview">
+  
+  **a.** probabilistic graphic model (PGM) **b.** knowledge graph (KG) construction and augmentation. **c.** neural topic model (NTM) framework. 
+ </p>
+
+ 
+
 
 ## Preparing Data:
 **EHR data**
