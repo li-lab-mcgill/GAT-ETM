@@ -26,4 +26,4 @@ Please cite the following paper if you use this source in your work.
   publisher={Nature Publishing Group UK London}
 }
 ```
-For any clarification, comments, or suggestions please create an issue or contact \url{https://www.cs.mcgill.ca/~yueli/}{Dr. Yue Li} and \url{https://zouyuesong.github.io/}{Yuesong Zou}.
+For any clarification, comments, or suggestions please create an issue or contact [Dr. Yue Li](https://www.cs.mcgill.ca/~yueli/) and [Yuesong Zou](https://zouyuesong.github.io/).
